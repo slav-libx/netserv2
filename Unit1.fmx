@@ -1,0 +1,175 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 517
+  ClientWidth = 573
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ServerClientsListBox: TListBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 555.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 551.000000000000000000
+    Viewport.Height = 189.000000000000000000
+  end
+  object Circle2: TCircle
+    Position.X = 70.000000000000000000
+    Position.Y = 219.000000000000000000
+    Size.Width = 36.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'playtoolbutton'
+    TabOrder = 8
+    Text = 'Start Server'
+    OnClick = Button1Click
+  end
+  object ClientsListBox: TListBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 555.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 551.000000000000000000
+    Viewport.Height = 189.000000000000000000
+  end
+  object Button2: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'actiontoolbutton'
+    TabOrder = 10
+    Text = 'New Client'
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 512.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'trashtoolbutton'
+    TabOrder = 7
+    Text = 'Disconnect Client'
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 512.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'trashtoolbutton'
+    TabOrder = 2
+    Text = 'Disconnect Client'
+    OnClick = Button4Click
+  end
+  object ComboBox1: TComboBox
+    Items.Strings = (
+      'localhost'
+      '185.182.193.15'
+      '185.182.193.16'
+      '185.182.193.17')
+    ItemIndex = 0
+    Position.X = 88.000000000000000000
+    Position.Y = 476.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+  end
+  object Button5: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 464.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'escapetoolbutton'
+    TabOrder = 6
+    Text = 'Disconnect Client'
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 464.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'escapetoolbutton'
+    TabOrder = 3
+    Text = 'Disconnect Client'
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 416.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'stoptoolbutton'
+    TabOrder = 5
+    Text = 'Disconnect Client'
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 416.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'stoptoolbutton'
+    TabOrder = 4
+    Text = 'Disconnect Client'
+    OnClick = Button8Click
+  end
+  object Label1: TLabel
+    Position.X = 88.000000000000000000
+    Position.Y = 500.000000000000000000
+    Text = 'Label1'
+    TabOrder = 14
+  end
+  object Label2: TLabel
+    Position.X = 136.000000000000000000
+    Position.Y = 228.000000000000000000
+    Text = 'Label1'
+    TabOrder = 13
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 48
+    Top = 40
+  end
+end
