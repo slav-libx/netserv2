@@ -362,12 +362,12 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\relictum.node\Net\Net.Socket.pas"/>
+        <DCCReference Include="..\relictum.node\Library\Net.Socket.pas"/>
+        <DCCReference Include="..\relictum.node\Library\Net.StreamSocket.pas"/>
+        <DCCReference Include="..\relictum.node\Library\UCustomMemoryStream.pas"/>
         <DCCReference Include="Unit1.pas">
             <Form>Form1</Form>
         </DCCReference>
-        <DCCReference Include="..\relictum.node\Net\Net.StreamSocket.pas"/>
-        <DCCReference Include="..\relictum.node\Library\UCustomMemoryStream.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

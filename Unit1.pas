@@ -133,7 +133,7 @@ begin
   B:=TEncoding.ANSI.GetBytes(THash.GetRandomString(10));
 
 //  SetLength(B,100000);//1024*4);//65536);
-  SetLength(B,100000);//1024*4);//65536);
+  SetLength(B,1000000);//1024*4);//65536);
 
   for C in Clients do if C.Connected then C.SendPackage(B,1111);
 
